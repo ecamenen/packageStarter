@@ -32,7 +32,7 @@ add_shinyappsio_file()
 # Before doing that, remove BiocCheck and biocViews in DESCRIPTION
 deployApp(
     appName = golem::get_golem_name(),
-    appTitle = ")"
+    appTitle = pkgload::pkg_desc()$get_field("Title")
 )
 
 # Set options here

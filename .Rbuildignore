@@ -6,6 +6,13 @@
 ^.*\.tar\.gz$
 ^\.github$
 ^.*extdata/
+^Dockerfile$
+^\.dockerignore$
+^doc$
+^Meta$
+^.local$
+^.config$
+^.cache$
 ^.~lock.*
 ^.*\.temp$
-^multiAnalysis\.Rproj$
+docker_launch.sh

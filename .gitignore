@@ -6,7 +6,12 @@
 .idea/
 *.tar.gz
 *.temp
+inst/doc
 inst/extdata/
-.Rhistory
-.RData
+Meta
+.local/
+.config/
+/doc/
+/Meta/
+.cache/
 *.~lock.*
