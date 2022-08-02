@@ -1,0 +1,11 @@
+^.*\.Rproj$
+^\.Rproj\.user$
+^README\.Rmd$
+^\.idea$
+^dev$
+^.*\.tar\.gz$
+^\.github$
+^.*extdata/
+^.~lock.*
+^.*\.temp$
+^multiAnalysis\.Rproj$

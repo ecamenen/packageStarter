@@ -1,0 +1,12 @@
+.Rproj.user
+.Rhistory
+.RData
+*.Rproj*
+.Rproj.user
+.idea/
+*.tar.gz
+*.temp
+inst/extdata/
+.Rhistory
+.RData
+*.~lock.*
