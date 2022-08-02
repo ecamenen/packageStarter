@@ -16,8 +16,8 @@ RUN apt-get update --allow-releaseinfo-change -qq && \
 RUN apt-get install -y --no-install-recommends libglpk-dev libxt6
 ENV RPKGS attachment BiocManager config covr cowplot DataExplorer devtools dlookr ggpubr ggstatsplot globals golem gplots janitor knitr lintr lubridate markdown moments naniar openxlsx pkgload plotly psych rayshader RColorBrewer reshape2 rmarkdown rsconnect rstatix see sjPlot skimr styler tidyverse venn VIM viridis
 RUN Rscript -e "install.packages(commandArgs(TRUE))" ${RPKGS}
-RUN R -e "devtools::install_github('ecamenen/"${TOOL_NAME}"', ref = '"${TOOL_VERSION}"')"
 RUN Rscript -e "BiocManager::install('BiocCheck')"
+RUN R -e "devtools::install_github('ecamenen/"${TOOL_NAME}"', ref = '"${TOOL_VERSION}"')"
 RUN Rscript -e 'devtools::install_github("moldach/vapoRwave")'
 # RUN Rscript -e "install.packages(commandArgs(TRUE))" datawizard
 # RUN R -e "install.packages('bayestestR', repos = 'https://easystats.r-universe.dev')"
