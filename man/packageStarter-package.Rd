@@ -4,8 +4,16 @@
 \name{packageStarter-package}
 \alias{packageStarter}
 \alias{packageStarter-package}
-\title{packageStarter:}
+\title{packageStarter: packageStarter}
 \description{
+packageStarter
+}
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://github.com/ecamenen/packageStarter}
+  \item Report bugs at \url{https://github.com/ecamenen/packageStarter/issues}
+}
 
 }
 \author{
