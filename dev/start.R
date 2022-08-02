@@ -26,6 +26,7 @@ use_description(
         Version = "0.1.0"
     )
 )
+document()
 use_git()
 use_git(message = "Update package configuration")
 create_project(path)
