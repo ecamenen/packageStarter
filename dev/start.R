@@ -1,16 +1,19 @@
 library(devtools)
 
 name <- "packageStarter"
+
 # available::available(name)
 path <- paste0("~/bin/", name)
 if (!file.exists(path)) {
     dir.create(file.path(path))
 }
 setwd(path)
-create_project(path)
 create_package(path)
-use_git(message = "Add packaging configuration files")
-use_github()
+
+system(paste("git clone  https://github.com/ecamenen/packageStarter.git", name))
+# Remove git remote in DESCRIPTION
+system("rm -rf .git")
+golem::set_golem_name(name)
 use_description(
     fields = list(
         Title = "",
@@ -23,6 +26,11 @@ use_description(
         Version = "0.1.0"
     )
 )
+use_git()
+use_git(message = "Update package configuration")
+create_project(path)
+system(paste("git clone  https://github.com/ecamenen/packageStarter.git", name))
+
 use_readme_rmd()
 use_cran_badge()
 use_package_doc()
