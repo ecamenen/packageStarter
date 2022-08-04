@@ -13,9 +13,10 @@ BugReports: https://github.com/ecamenen/packageStarter/issues
 Depends:
     R (>= 2.10)
 Imports: 
-    magrittr
+    magrittr,
+    utils
 Encoding: UTF-8
 Language: en-US
 LazyData: false
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.1.1
+RoxygenNote: 7.2.1

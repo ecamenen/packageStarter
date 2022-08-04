@@ -1,10 +1,16 @@
 # sudo apt install libfontconfig1-dev libfreetype6-dev libharfbuzz-dev libfribidi-dev libcairo2-dev
 
+#' Load libraries
+#'
+#' Load libraries
+#'
+#' @param librairies A list of libraries
+#'
 #' @export
 load_libraries <- function(librairies) {
     for (l in librairies) {
         if (!(l %in% installed.packages()[, "Package"])) {
-            utils::install.packages(l)
+            install.packages(l)
         }
         suppressPackageStartupMessages(
             library(
