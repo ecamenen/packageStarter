@@ -4,9 +4,9 @@
 \name{packageStarter-package}
 \alias{packageStarter}
 \alias{packageStarter-package}
-\title{packageStarter: packageStarter}
+\title{packageStarter: Automatize R packaging}
 \description{
-packageStarter
+Utilities for automating the construction and development of an R package for submission to CRAN.
 }
 \seealso{
 Useful links:
