@@ -5,13 +5,12 @@
 .Rproj.user
 .idea/
 *.tar.gz
-*.temp
 inst/doc
 inst/extdata/
-Meta
+Meta/
 .local/
 .config/
-/doc/
-/Meta/
+doc/
 .cache/
 *.~lock.*
+packageStarter.BiocCheck
