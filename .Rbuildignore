@@ -19,3 +19,4 @@ docker_launch.sh
 ^app_config\.R$
 ^\.RData$
 ^packageStarter\.BiocCheck$
+^\.github$
